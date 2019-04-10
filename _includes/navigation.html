@@ -1,4 +1,8 @@
 <nav>
-    <a href="/ruby_one">Home</a>
-    <a href="/ruby_one/about.html">About</a>
+    <a href="/ruby_one" {% if page.url == "/ruby_one" %}style="color: red;"{% endif %}>
+        Home
+    </a>
+    <a href="/ruby_one/about.html" {% if page.url == "/ruby_one/about.html" %}style="color: red;"{% endif %}>
+        About
+    </a>
   </nav>
